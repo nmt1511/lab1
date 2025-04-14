@@ -5,21 +5,22 @@ import React from 'react';
 
 import AboutScreen from './screens/AboutScreen'; // giả sử bạn có màn Giới thiệu
 import HomeScreen from './screens/HomeScreen';
-import PJ1Screen from './screens/pj1';
-import PJ10Screen from './screens/pj10';
-import PJ2Screen from './screens/pj2';
-import PJ3Screen from './screens/pj3';
-import PJ4Screen from './screens/pj4';
-import PJ5Screen from './screens/pj5';
-import PJ6Screen from './screens/pj6';
-import PJ7Screen from './screens/pj7';
-import PJ8Screen from './screens/pj8';
-import PJ9Screen from './screens/pj9';
+import PJ1Screen from './screens/lab1/pj1';
+import PJ10Screen from './screens/lab1/pj10';
+import PJ2Screen from './screens/lab1/pj2';
+import PJ3Screen from './screens/lab1/pj3';
+import PJ4Screen from './screens/lab1/pj4';
+import PJ5Screen from './screens/lab1/pj5';
+import PJ6Screen from './screens/lab1/pj6';
+import PJ7Screen from './screens/lab1/pj7';
+import PJ8Screen from './screens/lab1/pj8';
+import PJ9Screen from './screens/lab1/pj9';
 
 
 
 // Định nghĩa kiểu điều hướng
 type RootStackParamList = {
+  Tabs: undefined;
   PJ1: undefined;
   PJ2: undefined;
   PJ3: undefined;

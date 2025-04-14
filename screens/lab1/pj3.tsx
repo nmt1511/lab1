@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
-import MyButton from './MyButton';
+import MyButton from '../MyButton';
 
 export default function PJ3() {
   return (
