@@ -3,7 +3,6 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import React from 'react';
 import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-// Thêm PJ4 → PJ6 vào danh sách điều hướng
 type RootStackParamList = {
   PJ1: undefined;
   PJ2: undefined;
@@ -15,7 +14,9 @@ type RootStackParamList = {
   PJ8: undefined;
   PJ9: undefined;
   PJ10: undefined;
+  Calculator: undefined; // 🧮 thêm dòng này
 };
+
 
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -34,7 +35,9 @@ export default function HomeScreen() {
     { id: '8', title: 'Dự án 8', screen: 'PJ8' },
     { id: '9', title: 'Dự án 9', screen: 'PJ9' },
     { id: '10', title: 'Dự án 10', screen: 'PJ10' },
+    { id: '11', title: '🧮 Máy tính', screen: 'Calculator' }, // ✅ thêm dòng này
   ];
+  
   
 
   const renderItem = ({ item }: any) => (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 
-const data = Array.from({ length: 50 }, (_, i) => ({
+const data = Array.from({ length: 100 }, (_, i) => ({
   key: `${i}`,
   name: `Item ${i + 1}`,
 }));

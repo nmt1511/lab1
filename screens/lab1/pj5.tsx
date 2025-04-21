@@ -29,6 +29,7 @@ export default function PJ5Screen() {
       <Square text="1" />
       <Square text="2" />
       <Square text="3" />
+      <Square text="4" />
     </View>
   );
 }

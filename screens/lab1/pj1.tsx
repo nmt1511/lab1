@@ -8,10 +8,11 @@ export default function PJ1() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f0f8ff', // 🌈 Thêm màu nền ở đây
+        backgroundColor: '#f0f8ff', 
       }}
     >
       <Text>Hello, React Native!</Text>
     </View>
   );
 }
+//npx create-expo-app@latest --template blank-typescript
