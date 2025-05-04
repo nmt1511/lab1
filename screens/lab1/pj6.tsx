@@ -13,6 +13,8 @@ export default function PJ6Screen() {
   );
 }
 
+
+
 const styles = StyleSheet.create({
   container: {
     paddingVertical: 20,
