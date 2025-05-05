@@ -1,22 +1,22 @@
-import { configureStore, createSlice } from '@reduxjs/toolkit'; // Import các hàm từ Redux Toolkit.
+import { configureStore, createSlice } from '@reduxjs/toolkit';
 
-const contactsSlice = createSlice({ // Tạo slice cho state "contacts".
-  name: 'contacts', // ✅ Tên slice, dùng khi gọi useSelector(state => state.contacts).
-  initialState: { // Trạng thái ban đầu của slice.
-    contacts: [], // Danh sách liên hệ.
-    loading: false, // Trạng thái đang tải.
-    error: false, // Trạng thái lỗi.
+const contactsSlice = createSlice({
+  name: 'contacts',
+  initialState: {
+    contacts: [],
+    loading: false,
+    error: false,
   },
-  reducers: { // Định nghĩa các reducer để thay đổi state.
-    fetchContactsLoading: (state) => { // Reducer để đặt trạng thái loading.
+  reducers: {
+    fetchContactsLoading: (state) => {
       state.loading = true;
       state.error = false;
     },
-    fetchContactsSuccess: (state, action) => { // Reducer để lưu danh sách liên hệ khi tải thành công.
-      state.contacts = action.payload; // Lưu danh sách liên hệ từ action payload.
-      state.loading = false; 
+    fetchContactsSuccess: (state, action) => {
+      state.contacts = action.payload;
+      state.loading = false;
     },
-    fetchContactsError: (state) => { // Reducer để đặt trạng thái lỗi.
+    fetchContactsError: (state) => {
       state.loading = false;
       state.error = true;
     },
@@ -24,15 +24,15 @@ const contactsSlice = createSlice({ // Tạo slice cho state "contacts".
 });
 
 export const {
-  fetchContactsLoading, // Action để đặt trạng thái loading.
-  fetchContactsSuccess, // Action để lưu danh sách liên hệ.
-  fetchContactsError, // Action để đặt trạng thái lỗi.
+  fetchContactsLoading,
+  fetchContactsSuccess,
+  fetchContactsError,
 } = contactsSlice.actions;
 
-const store = configureStore({ // Tạo Redux store.
+const store = configureStore({
   reducer: {
-    contacts: contactsSlice.reducer, // Thêm reducer của slice "contacts" vào store.
+    contacts: contactsSlice.reducer,
   },
 });
 
-export default store; // Xuất store để sử dụng trong ứng dụng.
+export default store;
