@@ -5,7 +5,7 @@ import DetailListItem from '../../components/DetailListItem';
 
 export default function Profile({ route }: any) {
   const { contact } = route.params;
-  const { avatar, name, email, phone, cell } = contact;
+  const { avatar, name, email, phone, cell, address } = contact;
 
   return (
     <View style={styles.container}>
@@ -16,6 +16,7 @@ export default function Profile({ route }: any) {
         <DetailListItem icon="mail" title="Email" subtitle={email} />
         <DetailListItem icon="phone" title="Work" subtitle={phone} />
         <DetailListItem icon="smartphone" title="Personal" subtitle={cell} />
+        <DetailListItem icon="location-on" title="Address" subtitle={address} />
       </View>
     </View>
   );

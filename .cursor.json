@@ -1,0 +1,97 @@
+{
+  "editor": {
+    "formatOnSave": true,
+    "tabSize": 2,
+    "insertSpaces": true,
+    "wordWrap": "on",
+    "rulers": [80, 100],
+    "bracketPairColorization": true,
+    "guides": {
+      "bracketPairs": true,
+      "indentation": true
+    },
+    "defaultFormatter": "esbenp.prettier-vscode",
+    "formatOnPaste": true,
+    "formatOnType": true,
+    "detectIndentation": true,
+    "trimTrailingWhitespace": true,
+    "insertFinalNewline": true,
+    "trimFinalNewlines": true
+  },
+  "files": {
+    "trimTrailingWhitespace": true,
+    "insertFinalNewline": true,
+    "trimFinalNewlines": true,
+    "exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.git": true,
+      "**/ios": true,
+      "**/android": true
+    }
+  },
+  "typescript": {
+    "suggest.completeFunctionCalls": true,
+    "updateImportsOnFileMove": "always",
+    "preferences": {
+      "importModuleSpecifier": "non-relative"
+    }
+  },
+  "javascript": {
+    "suggest.completeFunctionCalls": true,
+    "updateImportsOnFileMove": "always",
+    "preferences": {
+      "importModuleSpecifier": "non-relative"
+    }
+  },
+  "search": {
+    "exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.git": true,
+      "**/ios": true,
+      "**/android": true
+    }
+  },
+  "terminal": {
+    "integrated": {
+      "shell": {
+        "windows": "cmd.exe"
+      }
+    }
+  },
+  "workbench": {
+    "colorTheme": "Default Dark+",
+    "iconTheme": "material-icon-theme",
+    "tree": {
+      "indent": 20,
+      "renderIndentGuides": true
+    }
+  },
+  "explorer": {
+    "fileNesting": {
+      "enabled": true,
+      "patterns": {
+        "*.tsx": "${capture}.test.tsx, ${capture}.styles.ts, ${capture}.types.ts",
+        "*.ts": "${capture}.test.ts, ${capture}.types.ts",
+        "*.jsx": "${capture}.test.jsx, ${capture}.styles.js",
+        "*.js": "${capture}.test.js"
+      }
+    }
+  },
+  "emmet": {
+    "includeLanguages": {
+      "typescript": "typescriptreact",
+      "javascript": "javascriptreact"
+    }
+  },
+  "git": {
+    "autofetch": true,
+    "confirmSync": false,
+    "enableSmartCommit": true
+  }
+} 

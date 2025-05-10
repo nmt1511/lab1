@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "381239416541",
+    "firebase_url": "https://thuchanh-211e1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "thuchanh-211e1",
+    "storage_bucket": "thuchanh-211e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381239416541:android:f1930803d01e337a012d34",
+        "android_client_info": {
+          "package_name": "com.thuchanh.lab1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsIH-X5SV3PhKCF3J9DVh9B-5JfKdNcME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

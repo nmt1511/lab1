@@ -25,12 +25,12 @@ const getIcon = (name: MaterialIconName) => ({ color }: { color: string }) => (
 const BottomTabs = () => (
   <Tab.Navigator screenOptions={{ headerShown: false }}>
     <Tab.Screen
-      name="Contacts"
+      name="Contact"
       component={Contacts}
       options={{ tabBarIcon: getIcon('list') }}
     />
     <Tab.Screen
-      name="Favorites"
+      name="Favorite"
       component={Favorites}
       options={{ tabBarIcon: getIcon('star') }}
     />
